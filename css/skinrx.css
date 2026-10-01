@@ -1,0 +1,236 @@
+#gnb {
+    width: 100%;
+    height: 32px;
+    background-color: rgb(0, 0, 0);
+}
+#header {
+}
+#nav {
+}
+#main {
+}
+#footer {
+}
+
+.container {
+    width: 944px;
+    margin: 0 auto;
+    position: relative;
+    background: #aef03562;
+}
+
+/* gnb */
+.gnb_inner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gnb h6 {
+    font-size: 0.8em;
+}
+#gnb h6 a {
+    color: #180303;
+}
+#gnb h6 a:hover {
+    color: rgb(27, 5, 27);
+}
+
+#gnb ul {
+    display: flex;
+}
+#gnb ul li {
+    font-size: 0.85em;
+    padding: 0 9px;
+}
+#gnb ul li :last-child {
+    padding-right: 0;
+}
+#gnb ul li a {
+    color: #ebcdcd;
+}
+#gnb ul li a:hover {
+    color: rgb(173, 83, 23);
+}
+/* dlalwlfmf vygusgksms qkdqjq
+1) html <img"..> 중요한 이미지 베너 등
+2) css ex}backgroud 
+3) */
+
+#gnb h6 span {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background: url(../img/icons.png) no-repeat -350px 2px;
+    margin-left: 3px;
+}
+#gnb ul li span {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background: url(../img/icons.png) no-repeat 0 0;
+    margin-left: 5px;
+}
+#gnb ul li:nth-child(3) span {
+    background-position: -299px 2px;
+}
+#gnb ul li:nth-child(4) span {
+    background-position: -200px 2px;
+}
+#gnb ul li:nth-child(5) span {
+    background-position: -250px 2px;
+}
+body {
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+img {
+    vertical-align: top;
+}
+img,
+fieldset,
+iframe {
+    border: 0 none;
+}
+
+/* IR 효과 */
+.ir_pm {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+/* header */
+.header_inner {
+    height: 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.menu {
+    display: flex;
+}
+ul.menu li {
+}
+ul.menu li a {
+    display: block;
+    padding: 0 11px;
+    font-weight: bold;
+    position: relative;
+}
+ul.menu li:first-child a {
+    padding-left: 0;
+}
+
+ul.menu li a.bar::before {
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+ul.menu li a:hover {
+}
+h1.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    letter-spacing: 3px;
+
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    /* 나를 왼쪽으로 반만 이동 */
+}
+h1.logo a {
+    color: #114926;
+}
+h1.logo a span {
+    color: #969696;
+    font-weight: 150;
+}
+.search_box {
+    display: flex;
+    border: 1px solid #114926;
+    box-sizing: border-box;
+}
+.search_box input {
+    display: inline-block;
+    width: 164px;
+    height: 36px;
+    padding-left: 10px;
+    outline: 0;
+    background-color: transparent;
+}
+.search_box button {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../img/lip.png) no-repeat center center / 80%;
+
+    cursor: pointer;
+}
+/* .nav_inner {
+    border-top: 5px solid #333;
+    padding-top: 20px;
+    height: 56px;
+    background-color: #ffffff;
+}
+
+#nav ul {
+    display: flex;
+}
+#nav ul li {
+    justify-content: space-between;
+    margin: 0 auto;
+} */
+#nav ul {
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid #333;
+    /* height: 56px; */
+    /* 세로값을 지정하지 않는 방향으로 */
+}
+#nav ul li {
+    /* 폰트페밀리 지정할것 시간없었음 */
+    font-size: 1ea;
+    font-weight: 500;
+}
+
+#nav ul li a {
+    display: block;
+    padding: 20px 0;
+    color: #180303;
+}
+#nav ul li a:hover {
+}

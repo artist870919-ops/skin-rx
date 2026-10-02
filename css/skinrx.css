@@ -1,7 +1,7 @@
 #gnb {
     width: 100%;
     height: 32px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
 }
 #header {
 }
@@ -9,6 +9,7 @@
 }
 #main {
 }
+
 #footer {
 }
 
@@ -16,7 +17,6 @@
     width: 944px;
     margin: 0 auto;
     position: relative;
-    background: #aef03562;
 }
 
 /* gnb */
@@ -50,7 +50,7 @@
     color: #ebcdcd;
 }
 #gnb ul li a:hover {
-    color: rgb(173, 83, 23);
+    color: #fff;
 }
 /* dlalwlfmf vygusgksms qkdqjq
 1) html <img"..> 중요한 이미지 베너 등
@@ -222,9 +222,9 @@ h1.logo a span {
     /* 세로값을 지정하지 않는 방향으로 */
 }
 #nav ul li {
-    /* 폰트페밀리 지정할것 시간없었음 */
+    font-family: "Ubuntu", sans-serif;
     font-size: 1ea;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #nav ul li a {
@@ -233,4 +233,298 @@ h1.logo a span {
     color: #180303;
 }
 #nav ul li a:hover {
+    color: #114926;
+}
+
+/* mian banner */
+.main_banner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.rolling {
+    width: 624px;
+    height: 456px;
+}
+
+.main_event {
+    width: 304px;
+    height: 136px;
+    background-color: rgba(243, 240, 240, 0);
+    background: url(../img/main_event.png) no-repeat center center / cover;
+}
+.rolling {
+    width: 624px;
+    height: 456px;
+    background-color: #114926;
+}
+.feature_item {
+    width: 304px;
+    gap: 304px;
+    background-color: #fff;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.feature_item figcaption {
+    /* 폰트바꾸기 */
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.feature_item .feature_img {
+    text-align: center;
+}
+
+/* itme txt */
+.item_text {
+    text-align: center;
+}
+.item_text ul {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.item_text ul li {
+    margin-bottom: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item_text ul li:first-child {
+    font-weight: 800;
+    color: #010e06;
+}
+.item_text ul:nth-child {
+    color: #333;
+}
+
+.item_text ul li span.money {
+    color: #333;
+    font-weight: 800;
+    margin-right: 8px;
+}
+.item_text ul li span.cancle {
+    color: #969696;
+    text-decoration: line-through;
+}
+
+/* title start 메인안 섹션별로 사용 */
+.title {
+    height: 46px;
+    border-top: 5px solid#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b1bdb6;
+}
+.title h2 {
+    /* 네비폰트 */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    /* 글자사이 벌려줨 */
+    color: #333;
+}
+
+/* title end */
+
+/*special_picks */
+.special_picks {
+    margin-top: 50px;
+}
+
+.pick_menu {
+    border-top: 2px dotted #114926;
+}
+.pick_menu ul {
+    border-top: 2px dotted #8b1616;
+    display: flex;
+    justify-content: center;
+}
+.pick_menu ul li {
+    padding: 0 15px;
+    /* now 메뉴 글자사이 벌려짐 물어보자 */
+    position: relative;
+}
+.pick_menu ul li a {
+    display: block;
+    padding: 15px 0;
+}
+.pick_menu ul li a:hover {
+    border-top: 4px solid #8b1616;
+    /* position: relative;
+    top: -4px; */
+    /* 메뉴선 움직이는거  */
+    margin-top: -4px;
+}
+/* 삼각형만들기 가상요소 이용 보더성질 이용*/
+.triangle::before {
+    content: "";
+    border-top: 5px solid#000;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+}
+.pick_menu ul li a:hover .triangle::before {
+    opacity: 1;
+}
+
+.pick_box {
+    display: flex;
+}
+.pick {
+    width: 25%;
+    /* flex: 1; */
+    text-align: center;
+    padding-bottom: 15px;
+}
+.pick_img {
+    padding: 15px 0;
+}
+.pick_icon {
+    width: 25px;
+    height: 16px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    background: url(../img/icons.png) no-repeat 0 0;
+}
+.icon02 {
+    width: 48px;
+    background-position: -50px 0;
+}
+.icon04 {
+    background-position: -150px 0;
+}
+.magazine {
+    margin-top: 50px;
+}
+.brand_focus {
+    margin-top: 50px;
+}
+.product_box {
+    display: flex;
+    justify-content: space-between;
+}
+.best_contents {
+    margin-top: 50px;
+}
+
+.best_inner {
+    display: flex;
+}
+.best_menu {
+}
+.best_menu li {
+    width: 176px;
+}
+.best_menu li a {
+    display: block;
+    width: 100%;
+    height: 72px;
+}
+.best_menu li:nth-child(1) a {
+    background: url(../img/best_menu01.jpg);
+}
+.best_menu li:nth-child(2) a {
+    background: url(../img/best_menu02.jpg);
+}
+.best_menu li:nth-child(3) a {
+    background: url(../img/best_menu03.jpg);
+}
+.best_menu li:nth-child(4) a {
+    background: url(../img/best_menu04.jpg);
+}
+.best_menu li:nth-child(1) a:hover {
+    background: url(../img/best_menu01_r.jpg);
+}
+.best_menu li:nth-child(2) a:hover {
+    background: url(../img/best_menu02_r.jpg);
+}
+.best_menu li:nth-child(3) a:hover {
+    background: url(../img/best_menu03_r.jpg);
+}
+.best_menu li:nth-child(4) a:hover {
+    background: url(../img/best_menu04_r.jpg);
+}
+.best_iframe {
+    width: 768px;
+    height: 288px;
+}
+.tab_box {
+    margin-top: 50px;
+}
+.seller_box {
+    display: flex;
+    justify-content: space-around;
+}
+.seller_box a {
+    transition: 0.5s;
+}
+.seller_box a:hover {
+    filter: blur(5px);
+}
+/* .footer_inner {
+    width: 944px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.customer_box {
+    border-right: 1px solid #000;
+    width: 30%;
+    margin-top: 10px;
+}
+.news_box {
+    border-right: 1px solid #000;
+    width: 30%;
+    margin-top: 10px;
+}
+.outlet_box {
+    width: 30%;
+    margin-top: 10px;
+} */
+
+.footer_inner {
+    margin-top: 80px;
+    display: flex;
+    border-top: 5px solid#010e06;
+    padding: 30px 0;
+}
+.footer_inner section {
+    flex: 1;
+    padding: 0 15px;
+    height: 86px;
+}
+.footer_inner section ul {
+    border-right: 1px solid #010e06;
+    height: inherit;
+}
+.footer_inner section ul.outlet {
+    border-right: 0;
+    border-bottom: 1px dotted #000;
+    padding-bottom: 5px;
+    height: 38px;
+}
+.footer_inner section ul li {
+    margin-bottom: 3px;
+}
+.footer_inner section ul li span {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.footer_inner section ul li strong {
+    font-size: 1.7em;
 }

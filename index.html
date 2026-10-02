@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/font.css" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/skinrx.css" />
@@ -67,7 +68,21 @@
             <div class="container">
                 <section class="main_banner" aria-label="메인 프로모션 베너">
                     <h2 class="ir_so">메인베너</h2>
-                    <div class="rolling"><img src="img/main_roll01.png" alt="" /></div>
+                    <!-- <div class="rolling"><img src="img/main_roll01.png" alt="" /></div> -->
+                    <div class="swiper rolling">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/main_roll01.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/main_roll02.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/main_roll03.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/main_roll01.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/main_roll02.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/main_roll03.png" alt="" /></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- 스와이퍼 -->
                     <div class="event_inner">
                         <div class="feature_item">
                             <figcaption>FEATURED ITEM</figcaption>
@@ -169,10 +184,24 @@
                     <div class="title">
                         <h2>BRAND FOCUS</h2>
                     </div>
-                    <div class="product_box">
+                    <!-- <div class="product_box">
                         <div class="product"><img src="img/brand_product01.png" alt="" /></div>
                         <div class="product"><img src="img/brand_product02.png" alt="" /></div>
                         <div class="product"><img src="img/brand_product03.png" alt="" /></div>
+                    </div> -->
+                    <div class="swiper product_box">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/brand_product01.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/brand_product02.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/brand_product03.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/brand_product01.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/brand_product02.png" alt="" /></div>
+                            <div class="swiper-slide"><img src="img/brand_product03.png" alt="" /></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </section>
                 <!-- //brand_focus -->
@@ -248,28 +277,36 @@
                         <p>OUTLET</p>
                         <p>Lowest priced ever</p>
                     </section>
-                    -->
-
-                    <!-- <section class="customer_box">
-
-                        <li><span>고객센터</span></li>
-                        <li><strong>1566-1140</strong></li>
-                        <li>상담시간 : 오전 9시~오후 6시(토,일 공휴일 휴무)</li>
-                        <li>점심시간 : 정오 12시~오후 1시(상담불가)</li>
-                    </section>
-                    <section class="news_box">
-                        <li><span>NEWS &amp; NOTICE</span></li>
-                        <li>[공지] 카드사 무이자 할부 안내</li>
-                        <li>[발표] 제주도 바캉스 지원 이벤트 당첨자 안내</li>
-                        <li>[공지] '센델라' 뷰티테스터 안내입니다.</li>
-                    </section>
-                    <section class="outlet_box">
-                        <p>OUTLET</p>
-                        <p>Lowest priced ever</p>
-                    </section> -->
                 </div>
             </div>
         </footer>
         <!-- footer -->
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".rolling", {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+            var swiper = new Swiper(".product_box", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
     </body>
 </html>

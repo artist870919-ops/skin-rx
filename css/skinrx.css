@@ -246,6 +246,9 @@ h1.logo a span {
     width: 624px;
     height: 456px;
 }
+.rolling img {
+    width: 100%;
+}
 
 .main_event {
     width: 304px;
@@ -253,11 +256,7 @@ h1.logo a span {
     background-color: rgba(243, 240, 240, 0);
     background: url(../img/main_event.png) no-repeat center center / cover;
 }
-.rolling {
-    width: 624px;
-    height: 456px;
-    background-color: #114926;
-}
+
 .feature_item {
     width: 304px;
     gap: 304px;
@@ -339,10 +338,10 @@ h1.logo a span {
 }
 
 .pick_menu {
-    border-top: 2px dotted #114926;
+    border-top: 2px dotted #011408;
 }
 .pick_menu ul {
-    border-top: 2px dotted #8b1616;
+    border-top: 2px dotted #130000;
     display: flex;
     justify-content: center;
 }
@@ -356,7 +355,7 @@ h1.logo a span {
     padding: 15px 0;
 }
 .pick_menu ul li a:hover {
-    border-top: 4px solid #8b1616;
+    border-top: 4px solid #240101;
     /* position: relative;
     top: -4px; */
     /* 메뉴선 움직이는거  */
@@ -412,9 +411,12 @@ h1.logo a span {
 .brand_focus {
     margin-top: 50px;
 }
-.product_box {
+/* .product_box {
     display: flex;
     justify-content: space-between;
+} */
+.product_box img {
+    width: 100%;
 }
 .best_contents {
     margin-top: 50px;
@@ -474,28 +476,6 @@ h1.logo a span {
 .seller_box a:hover {
     filter: blur(5px);
 }
-/* .footer_inner {
-    width: 944px;
-    margin-top: 80px;
-    margin-bottom: 50px;
-    border-top: 2px solid black;
-    display: flex;
-    justify-content: space-evenly;
-}
-.customer_box {
-    border-right: 1px solid #000;
-    width: 30%;
-    margin-top: 10px;
-}
-.news_box {
-    border-right: 1px solid #000;
-    width: 30%;
-    margin-top: 10px;
-}
-.outlet_box {
-    width: 30%;
-    margin-top: 10px;
-} */
 
 .footer_inner {
     margin-top: 80px;

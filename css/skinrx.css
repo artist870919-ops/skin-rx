@@ -30,7 +30,7 @@
     font-size: 0.8em;
 }
 #gnb h6 a {
-    color: #180303;
+    color: floralwhite;
 }
 #gnb h6 a:hover {
     color: rgb(27, 5, 27);
@@ -296,19 +296,19 @@ h1.logo a span {
 
 .item_text ul li:first-child {
     font-weight: 800;
-    color: #010e06;
+    color: #fff;
 }
 .item_text ul:nth-child {
-    color: #333;
+    color: #fff;
 }
 
 .item_text ul li span.money {
-    color: #333;
+    color: #fff;
     font-weight: 800;
     margin-right: 8px;
 }
 .item_text ul li span.cancle {
-    color: #969696;
+    color: #fff;
     text-decoration: line-through;
 }
 
@@ -319,7 +319,7 @@ h1.logo a span {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b1bdb6;
+    background-color: #fff;
 }
 .title h2 {
     /* 네비폰트 */
